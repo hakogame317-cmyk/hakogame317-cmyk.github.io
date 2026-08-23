@@ -1,0 +1,1 @@
+# hakogame317-cmyk.github.io
