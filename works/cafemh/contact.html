@@ -17,14 +17,19 @@
 <div id="headerInner">
 	
 <a href="index.html"><img src="common/images/logo.png" alt="cafeMH"></a>
+<button id="menu-button" aria-label="メニューボタン" aria-expanded="false" aria-controls="global-nav">
+	<span></span>
+  <span></span>
+	<span></span>
+</button>
 	
-<nav>
+<nav id="global-nav">
 <ul>
   <li><a href="#">About Us</a></li>
   <li><a href="#">Cakes<span>＆</span>Tea</a></li>
-  <li><a href="#">Afternoon Tea</a></li>
-  <li><a href="#">Access</a></li>
-  <li><a href="#">Contact</a></li>
+  <li><a href="afternoontea.html">Afternoon Tea</a></li>
+  <li><a href="index.html#access">Access</a></li>
+  <li><a href="contact.html">Contact</a></li>
 </ul>
 </nav>
 	
@@ -32,6 +37,14 @@
 </header>
 	
 <main>
+	
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <ol>
+    <li><a href="index.html">TOP</a></li>
+    <li aria-current="page">お問い合わせ</li>
+  </ol>
+</nav>
+
 <div id="contact">
 
 <h2>Contact<br><span>お問い合わせ</span></h2>
@@ -136,5 +149,8 @@
 </div>
 	
 </footer>
+
+<script src="common/js/script.js"></script>
+
 </body>
 </html>

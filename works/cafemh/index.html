@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"> 
 <title>cafeMH</title>
 <link href="common/css/style.css" rel="stylesheet" type="text/css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,13 +18,18 @@
 <div id="headerInner">
 	
 <a href="index.html"><img src="common/images/logo.png" alt="cafeMH"></a>
+<button id="menu-button" aria-label="メニューボタン" aria-expanded="false" aria-controls="global-nav">
+	<span></span>
+  <span></span>
+	<span></span>
+</button>
 	
-<nav>
+<nav id="global-nav">
 <ul>
   <li><a href="#">About Us</a></li>
   <li><a href="#">Cakes<span>＆</span>Tea</a></li>
-  <li><a href="#">Afternoon Tea</a></li>
-  <li><a href="#">Access</a></li>
+  <li><a href="afternoontea.html">Afternoon Tea</a></li>
+  <li><a href="index.html#access">Access</a></li>
   <li><a href="contact.html">Contact</a></li>
 </ul>
 </nav>
@@ -80,6 +86,7 @@
 	<div>
 	  <h3><span>《9月～11月のアフタヌーンティー》</span><br>Autumn Harmony<br>Afternoon Tea</h3>
 	  <p>栗やかぼちゃ、りんごなど秋の恵みを使った生ケーキと<br>香り高い紅茶を丁寧にセレクトしました。<br>やわらかな甘さと深まる紅茶の余韻が、忙しい日常に<br>静かな癒しのひとときを届けます。</p>
+	  <p>※要予約</p>
 	  <a href="#" class="btn"><span>MENU　▷</span></a>
 	</div>
   </div>
@@ -104,7 +111,9 @@
     <img src="images/cafemh_shop.png" alt="CafeMH外観">
   </div>
 	
-  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1639.2767002209912!2d135.24668276309984!3d34.741649967718786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1770727413245!5m2!1sja!2sjp" width="940" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <div class="map-wrapper">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1639.2767002209912!2d135.24668276309984!3d34.741649967718786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1770727413245!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
 
 </section>
 
@@ -112,7 +121,6 @@
 	
 
 <footer>
-	
 <div id="footerInner">
   <div id="footer-main">
 	<span></span>
@@ -138,5 +146,8 @@
 </div>
 	
 </footer>
+
+<script src="common/js/script.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+<title>Afternoon Tea|cafeMH</title>
+<link href="common/css/style.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=WDXL+Lubrifont+JP+N&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	
+<header>	
+<div id="headerInner">
+	
+<a href="index.html"><img src="common/images/logo.png" alt="cafeMH"></a>
+<button id="menu-button" aria-label="メニューボタン" aria-expanded="false" aria-controls="global-nav">
+	<span></span>
+  <span></span>
+	<span></span>
+</button>
+	
+<nav id="global-nav">
+<ul>
+  <li><a href="index.html#slow-moments">About Us</a></li>
+  <li><a href="index.html#menu">Cakes<span>＆</span>Tea</a></li>
+  <li><a href="#afternoontea" aria-current="page">Afternoon Tea</a></li>
+  <li><a href="index.html#access">Access</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+	
+</div>	 
+</header>
+	
+<main id="afternoontea-page">
+
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <ol>
+    <li><a href="index.html">TOP</a></li>
+    <li aria-current="page">Afternoon Tea</li>
+  </ol>
+</nav>
+
+<section id="afternoontea">
+	
+  <h2>Afternoon Tea</h2>
+	
+  <div class="container">
+	<img src="images/autumn_afternoontea.png" alt="AutumnAfternoonTea">
+	<div>
+	  <h3><span>《9月～11月のアフタヌーンティー》</span><br>Autumn Harmony<br>Afternoon Tea</h3>
+	  <p>栗やかぼちゃ、りんごなど秋の恵みを使った生ケーキと<br>香り高い紅茶を丁寧にセレクトしました。<br>やわらかな甘さと深まる紅茶の余韻が、忙しい日常に<br>静かな癒しのひとときを届けます。</p>
+	  <a href="#reservation" class="btn"><span>予約する</span></a>
+	</div>
+  </div>
+	
+</section>
+
+<section class="afternoontea_menu">
+<h3>MENU</h3>
+  <div class="afternoontea_menu_inner">
+		<div>
+			<h4>【スイーツ】</h4>
+			<p>&lt;1st Plate&gt;<br>・芋栗かぼちゃのレイヤードパフェ<br>・「丹波栗」のモンブラン<br>熊本県産「灯籠蜜芋」のスイートポテト<br>アップルキャラメルチーズタルト<br>
+			&lt;2nd Plate&gt;<br>・「丹波栗」とマダガスカル産バニラのムース<br>・北海道産かぼちゃのクレームブリュレ<br>・ざくろと巨峰のヴェリーヌ<br>・さつまいもの黒糖キャラメリゼとスコーン<br>・巨峰と無花果のコンフィチュール添え</p>
+		</div>
+		<div class="afternoontea_menu_drink">
+			<h4>【軽食（セイボリー）】</h4>
+			<p>・冷製パンプキンスープ<br>・いちじくと生ハムのサラダ<br>・かぼちゃのグラタン<br>・スモークサーモンとクリームチーズのスティックサンド</p>
+			<h4>【ドリンク】</h4>
+			<p>・紅茶（7種）<br>・ハーブティー（3種）<br>・コーヒー<br>※銘柄変更・おかわり自由</p>
+			<p class="price">3,800円<br><span>※税・サービス料込</span></p>
+		</div>
+	</div>
+</section>
+
+<section id="reservation">
+
+  <h2>Reservation<br><span>アフタヌーンティーのご予約</span></h2>
+
+  <form action="#" method="post" class="contact-form">
+
+  <p class="form-note"><span class="required">※</span>印は必須項目です</p>
+
+  <div id="form-group">
+
+	  <div class="form-group">
+	  <p>来店希望日<span class="required">※</span></p>
+	  <input type="date" name="date" min="2026-10-01" class="form-control" required></div>
+
+	  <div class="form-group">
+	  <p>来店希望時間<span class="required">※</span></p>
+	  <select name="time" class="form-control" required>
+		<option value="">選択してください</option>
+		<option value="10:00">10:00</option>
+		<option value="12:00">12:00</option>
+		<option value="14:00">14:00</option>
+		<option value="16:00">16:00</option>
+	  </select></div>
+
+	  <div class="form-group">
+	  <p>人数<span class="required">※</span></p>
+	  <select name="people" class="form-control" required>
+		<option value="">選択してください</option>
+		<option value="1">1名</option>
+		<option value="2">2名</option>
+		<option value="3">3名</option>
+		<option value="4">4名</option>
+		<option value="5">5名以上(備考欄にご記入ください)</option>
+	  </select></div>
+
+	  <div class="form-group">
+	  <p>お名前<span class="required">※</span></p>
+	  <input type="text" name="name" value="" placeholder="入力してください" class="form-control" required></div>
+
+	  <div class="form-group">
+	  <p>フリガナ<span class="required">※</span></p>
+	  <input type="text" name="kana" value="" placeholder="入力してください" class="form-control" required></div>
+
+	  <div class="form-group">
+	  <p>電話番号<span class="required">※</span></p>
+	  <input type="tel" name="tel" value="" placeholder="入力してください" class="form-control" required></div>
+
+	  <div class="form-group">
+	  <p>メールアドレス<span class="required">※</span></p>
+	  <input type="email" name="email" value="" placeholder="入力してください" class="form-control" required></div>
+
+	  <div class="form-group">
+		<p>アレルギー・備考<br><span class="note">（500文字以内）</span></p>
+	  <textarea name="text" placeholder="入力してください" maxlength="500"></textarea>
+	  </div>
+
+  </div>
+
+  <div class="agreement"><input type="checkbox" name="agreement" required>プライバシーポリシーに同意します。</div>
+
+  <button type="submit" class="btn">入力内容確認　▷</button>
+
+  </form>
+
+</section>
+
+</main>
+	
+
+<footer>
+<div id="footerInner">
+  <div id="footer-main">
+	<span></span>
+	<div>
+		<img src="common/images/logo.png" alt="cafeMH">
+		<p>CafeMH for yourself</p>
+		<ul>
+		<li><a href="#"><img src="common/images/icon_facebook.png" alt="facebook"></a></li>
+		<li><a href="#"><img src="common/images/icon_instagram.png" alt="instagram"></a></li>
+		<li><a href="#"><img src="common/images/icon_line.png" alt="LINE"></a></li>
+		</ul>
+	</div>
+	<span></span>
+  </div>
+	
+  <div id="footer-bottom">
+	<div class="footer-links">
+	  <a href="#">プライバシーポリシー</a>
+      <a href="#">株式会社ＭＨ</a>
+    </div>	
+    <small>Copyright @ 2026 cafeMH</small>
+  </div>	
+</div>
+	
+</footer>
+
+<script src="common/js/script.js"></script>
+
+</body>
+</html>
